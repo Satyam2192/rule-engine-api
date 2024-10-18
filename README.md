@@ -1,28 +1,8 @@
-Backend 
-Make sure you're in the /home/sk/Desktop/Zeotap/server directory.
-Activate your virtual environment if you haven't already:
-source .venv/bin/activate
-
-
-
-sudo apt install python3.12
-
-python3.12 -m venv .venv
-
-source .venv/bin/activate
-
-pip install -r requirements.txt
-
-Run the application:
-uvicorn app.main:app --reload
-
-Run the tests:
-pytest tests/test_rule_engine.py
-
-
 # Rule Engine API
 
 This project implements a Rule Engine API using FastAPI, allowing users to create, combine, evaluate, and modify rules. The API is designed to work with a MongoDB database and includes a custom rule engine for processing complex logical expressions.
+
+## API Documentation: [Postman](https://documenter.getpostman.com/view/31555061/2sAXxWZ9JG)
 
 ## Table of Contents
 
@@ -56,16 +36,11 @@ This project implements a Rule Engine API using FastAPI, allowing users to creat
 
 ## Getting Started
 
-### Prerequisites
-
-- Python 3.9
-- MongoDB
-
 ### Installation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/rule-engine-api.git
+   git clone https://github.com/Satyam2192/rule-engine-api.git
    cd rule-engine-api
    ```
 
@@ -89,6 +64,21 @@ This project implements a Rule Engine API using FastAPI, allowing users to creat
    ```
 
 The API will be available at `http://localhost:8000`.
+
+6. Run the tests:
+```
+pytest tests/test_rule_engine.py
+```
+Output:
+=========== test session starts ===========
+platform linux -- Python 3.12.3, pytest-8.3.3, pluggy-1.5.0
+rootdir: /home/sk/Desktop/Zeotap/server
+plugins: anyio-4.6.2.post1
+collected 7 items                         
+
+tests/test_rule_engine.py .......   [100%]
+
+============ 7 passed in 0.12s ============
 
 ## Usage
 
