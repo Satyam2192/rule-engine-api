@@ -93,13 +93,6 @@ The Rule Engine API allows you to create, combine, evaluate, and modify rules. R
 
 For detailed API documentation, visit `http://localhost:8000/docs` after starting the server.
 
-## Testing
-
-Run the tests using pytest:
-
-```
-pytest
-```
 
 ## Contributing
 
